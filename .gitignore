@@ -5,3 +5,8 @@ cache/
 node_modules/
 .DS_Store
 Thumbs.db
+
+.env
+export/
+__pycache__/
+*.pyc

@@ -55,4 +55,25 @@ body.admin-bar .is-position-sticky {
 	}
 }
 
-/* deploy: 0.1.3 */
+
+/* Главная лента: такая же дистанция от шапки, как у отдельной записи. */
+body.blog main.wp-block-group {
+	margin-top: 32px !important;
+}
+
+/* У первой записи нет дополнительного верхнего отступа. */
+body.blog .wp-block-post-template > li:first-child > .wp-block-group {
+	padding-top: 0 !important;
+}
+
+/* Заголовок в ленте — единственная ссылка на статью. */
+body.blog .wp-block-post-title a {
+	text-decoration: underline;
+	text-underline-offset: 0.16em;
+}
+
+@media (max-width: 781px) {
+	body.blog main.wp-block-group {
+		margin-top: 24px !important;
+	}
+}

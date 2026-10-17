@@ -25,11 +25,11 @@ WP Pusher ставит тему из подкаталога `theme/anton-pasiy`,
 
 Ширину колонки менять в `theme.json`, в полях `contentSize` и `wideSize`. Состав главной, записи и 404 — в `templates/`. Шапку и подвал — в `parts/`. Размеры шрифтов задаёт Twenty Twenty-Five; отдельную типографику в дочернюю тему не добавлять.
 
-Кнопка «Показать ещё» — атрибут `loadMore` блока Query Pagination в `templates/home.html`. Отдельный плагин для неё не нужен.
+Кнопка «Показать ещё» реализована плагином **Query Loop Load More**: он обрабатывает атрибуты `loadMore`, `loadMoreText` и `loadingText` блока Query Pagination в `templates/home.html`. Плагин должен оставаться установленным и активным.
 
 ## Зависимости
 
-WordPress с блочными темами и установленная тема Twenty Twenty-Five. Других зависимостей у файлов темы нет.
+WordPress с поддержкой блочных тем, установленная Twenty Twenty-Five и активный плагин **Query Loop Load More** для накопительной загрузки записей на главной. Для обновления темы используется WP Pusher.
 
 ## Откат
 

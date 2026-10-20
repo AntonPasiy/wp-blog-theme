@@ -18,6 +18,43 @@
 		<!-- wp:post-navigation-link {"showTitle":true,"arrow":"arrow"} /-->
 	</nav>
 	<!-- /wp:group -->
+	<!-- wp:comments {"className":"wp-block-comments-query-loop","style":{"spacing":{"margin":{"top":"var:preset|spacing|32","bottom":"0"}}}} -->
+	<div class="wp-block-comments wp-block-comments-query-loop" style="margin-top:var(--wp--preset--spacing--32);margin-bottom:0">
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|24"}},"layout":{"type":"default"}} -->
+		<div class="wp-block-group">
+			<!-- wp:heading -->
+			<h2 class="wp-block-heading">Комментарии</h2>
+			<!-- /wp:heading -->
+			<!-- wp:comments-title {"level":3,"showPostTitle":false,"fontSize":"body"} /-->
+			<!-- wp:comment-template -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|8","margin":{"top":"0","bottom":"var:preset|spacing|24"}}},"layout":{"type":"default"}} -->
+				<div class="wp-block-group" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--24)">
+					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|12"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+					<div class="wp-block-group">
+						<!-- wp:comment-author-name /-->
+						<!-- wp:comment-date {"fontSize":"small","textColor":"accent-4"} /-->
+					</div>
+					<!-- /wp:group -->
+					<!-- wp:comment-content /-->
+					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|12"}},"fontSize":"small","layout":{"type":"flex","flexWrap":"wrap"}} -->
+					<div class="wp-block-group has-small-font-size">
+						<!-- wp:comment-edit-link /-->
+						<!-- wp:comment-reply-link /-->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:group -->
+			<!-- /wp:comment-template -->
+			<!-- wp:comments-pagination {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+				<!-- wp:comments-pagination-previous /-->
+				<!-- wp:comments-pagination-numbers /-->
+				<!-- wp:comments-pagination-next /-->
+			<!-- /wp:comments-pagination -->
+			<!-- wp:post-comments-form /-->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:comments -->
 </main>
 <!-- /wp:group -->
 

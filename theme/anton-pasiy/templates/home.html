@@ -2,8 +2,37 @@
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|page"}}},"layout":{"type":"constrained"}} -->
 <main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--page)">
-	<!-- wp:heading {"level":1,"className":"screen-reader-text"} -->
-	<h1 class="wp-block-heading screen-reader-text">Блог</h1>
+	<!-- wp:group {"metadata":{"name":"Об авторе"},"style":{"spacing":{"blockGap":"var:preset|spacing|24"}},"layout":{"type":"default"}} -->
+	<div class="wp-block-group">
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|24"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+		<div class="wp-block-group">
+			<!-- wp:image {"id":114,"width":"88px","height":"88px","scale":"cover","sizeSlug":"medium","linkDestination":"none","className":"is-style-rounded","style":{"layout":{"selfStretch":"fixed","flexSize":"88px"}}} -->
+			<figure class="wp-block-image size-medium is-resized is-style-rounded"><img src="https://cl841244-wordpress-53bdv.tw1.ru/wp-content/uploads/2026/10/photo_2026-03-30_14-57-31-300x300.jpg" alt="Антон Пасий" class="wp-image-114" style="object-fit:cover;width:88px;height:88px"/></figure>
+			<!-- /wp:image -->
+			<!-- wp:heading {"level":1,"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
+			<h1 class="wp-block-heading">Антон Пасий</h1>
+			<!-- /wp:heading -->
+		</div>
+		<!-- /wp:group -->
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|16"}},"layout":{"type":"default"}} -->
+		<div class="wp-block-group">
+			<!-- wp:paragraph -->
+			<p>Разбираюсь, как устроены вещи, и создаю работающие системы — в технологиях, организациях и собственных проектах.</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:paragraph -->
+			<p>Здесь публикую статьи и заметки о том, что изучаю, пробую и осмысляю.</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
+		<!-- wp:social-links {"iconColor":"contrast","iconColorValue":"#111111","size":"has-small-icon-size","className":"is-style-logos-only","style":{"spacing":{"blockGap":"var:preset|spacing|16"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+		<ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only">
+			<!-- wp:social-link {"url":"https://github.com/AntonPasiy","service":"github","label":"Антон Пасий на GitHub"} /-->
+		</ul>
+		<!-- /wp:social-links -->
+	</div>
+	<!-- /wp:group -->
+	<!-- wp:heading {"style":{"spacing":{"margin":{"top":"var:preset|spacing|32"}}}} -->
+	<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--32)">Публикации</h2>
 	<!-- /wp:heading -->
 	<!-- wp:query {"query":{"perPage":20,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
 	<div class="wp-block-query">
